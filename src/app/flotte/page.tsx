@@ -19,10 +19,8 @@ export default function FleetPage() {
         {/* 1. SUPPRIME l'intégration 3D fixe qui était ici */}
 
         {/* 2. GRILLE DES VOITURES : On intègre la 3D DANS la boucle */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-         {cars.map((car) => (
-  <div key={car.id} className="group border border-zinc-900 p-6 bg-zinc-950/50">
-    {/* On passe tout l'objet car au wrapper */}
+<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">         {cars.map((car) => (
+<div key={car.id} className="group border border-zinc-900 p-6 bg-zinc-950/50 hover:border-yellow-600 transition-all duration-500">    {/* On passe tout l'objet car au wrapper */}
     <Vehicle3DWrapper car={car} />
 
                <div className="mt-8">

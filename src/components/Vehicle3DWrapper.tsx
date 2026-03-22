@@ -17,8 +17,7 @@ export default function Vehicle3DWrapper({ car }: { car: any }) {
         <VehicleViewer modelName={car.id} />
       ) : (
         // IMAGE DE SECOURS (Si hasModel: false)
-        <div className="relative w-full h-full">
-          <Image 
+<div className="relative w-full h-[300px] md:h-[450px] bg-zinc-950 border border-zinc-900 overflow-hidden group">          <Image 
             src={car.image} 
             alt={car.name} 
             fill 
